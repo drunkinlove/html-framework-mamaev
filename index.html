@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>adaptive framework</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container">This container is adaptive. It shrinks when the viewport width is less than a certain number of pixels. <br>
+  <div class="row clearfix">
+  These columns are adaptive as well.<br>
+    <div class="col-md-4"> </div>
+    <div class="col-md-4"> </div>
+    <div class="col-md-4"> </div>
+    <i>Clearfix</i> is used to prevent floating elements from escaping their container.
+  </div>
+  <div class="row">
+    Columns with no <i>clearfix</i>: <br>
+    <div class="col-md-4"> </div>
+    <div class="col-md-4"> </div>
+    <div class="col-md-4"> </div>
+  </div>
+</div> <br> <br> <br>
+
+<div class="container clearfix">
+The <i>pull-left</i> and <i>pull-right</i> classes are responsible for anchoring elements to the left and right borders of the container, respectively. <br>
+Demonstration of <i>pull-left</i> and <i>pull-right</i>:<br>
+  <div class="square pull-left"></div>
+  <div class="square pull-right"></div>
+</div>
+
+<div class="container">The <i>flex-row</i> class is to be applied to a container, and is responsible for aligning child elements in a row. <br> Demonstration of <i>flex-row</i>:</div>
+<div class="container flex-row">
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+</div>
+<div class="container">The <i>flex-column</i> class is the same as <i>flex-row</i>, but the container's children are aligned in a column instead.<br> Demonstration of <i>flex-column</i>:</div>
+<div class="container flex-column">
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+</div>
+<div class="container">The <i>space-between</i> class is to be applied to a flex-row container, and it allows for equal spacing between elements.<br> Demonstration of <i>space-between</i>:</div>
+<div class="container flex-row space-between">
+  <div class="square" style="width: 150px;"></div>
+  <div class="square" style="width: 250px;"></div>
+  <div class="square" style="width: 350px;"></div>
+</div>
+<div class="container">The <i>y-center</i> class is also to be applied to a flex-row container, it allows for vertical central alignment of child elements.<br> Demonstration of <i>y-center</i>:</div>
+<div class="container flex-row y-center">
+  <div class="square" style="height: 120px;"></div>
+  <div class="square" style="height: 230px;"></div>
+  <div class="square" style="height: 340px;"></div>
+</div>
+<div class="container">The <i>x-start</i> class is also to be applied to a flex-row container, it makes the child items pack towards the left border.<br> Demonstration of <i>x-start</i>:</div>
+<div class="container flex-row x-start">
+  <div class="square" style="height: 120px;"></div>
+  <div class="square" style="height: 230px;"></div>
+  <div class="square" style="height: 340px;"></div>
+</div>
+<div class="container">The <i>x-start</i> class is also to be applied to a flex-row container, it makes the child items pack towards the right border.<br> Demonstration of <i>x-end</i>:</div>
+<div class="container flex-row x-end">
+  <div class="square" style="height: 120px;"></div>
+  <div class="square" style="height: 230px;"></div>
+  <div class="square" style="height: 340px;"></div>
+</div>
+<div class="container">Demonstration of margins:</div>
+<div class="container flex-row">
+  <div class="square margin-8px text-center">8px</div>
+  <div class="square margin-16px text-center">16px</div>
+  <div class="square margin-32px text-center">32px</div>
+  <div class="square margin-40px text-center">40px</div>
+  <div class="square margin-48px text-center">48px</div>
+</div>
+<div class="container">Demonstration of padding:</div>
+<div class="container flex-row">
+  <div class="square padding-8px"><div class="square-sm"></div></div>
+  <div class="square padding-16px"><div class="square-sm"></div></div>
+  <div class="square padding-32px"><div class="square-sm"></div></div>
+  <div class="square padding-40px"><div class="square-sm"></div></div>
+  <div class="square padding-48px"><div class="square-sm"></div></div>
+</div>
+  
+  
+
+</body>
+
+</html>

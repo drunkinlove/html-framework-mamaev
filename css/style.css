@@ -1,0 +1,167 @@
+html {
+  background: #323;
+}
+
+/*----------Grid elements----------*/
+
+.container {
+  background-color: white;
+  width: 1220px;
+  padding: 20px;
+}
+
+.row {
+  padding: 20px;
+}
+
+.col-4, .col-sm-4, .col-md-4, .col-lg-4 {
+  border-style: solid;
+  padding: 20px;
+  float: left;
+  box-sizing: border-box;
+  width: calc(100%/3);
+}
+
+/*----------Rules for adaptive grid----------*/
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+  .col-lg-4 {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 744px;
+  }
+  .col-lg-4, .col-md-4 {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 576px;
+  }
+  .col-lg-4, .col-md-4, .col-sm-4 {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*----------Display tools----------*/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.y-center {
+  align-items: center;
+}
+
+.x-start {
+  justify-content: flex-start;
+}
+
+.x-end {
+  justify-content: flex-end;
+}
+
+/*----------Demo objects----------*/
+
+.square {
+  background: #212;
+  width: 150px;
+  height: 150px;
+  margin: 10px 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #655;
+  color: white;
+  font-size: 32px;
+  line-height: 150px;
+  box-sizing: border-box;
+}
+
+.square-sm {
+  background: white;
+  height: 50px;
+  width: 50px;
+}
+
+/*----------Margins and padding----------*/
+
+.margin-8px {
+  margin: 8px
+}
+.margin-16px {
+  margin: 16px
+}
+.margin-32px {
+  margin: 32px
+}
+.margin-40px {
+  margin: 40px
+}
+.margin-48px {
+  margin: 48px
+}
+
+
+.padding-8px {
+  padding: 8px
+}
+.padding-16px {
+  padding: 16px
+}
+.padding-32px {
+  padding: 32px
+}
+.padding-40px {
+  padding: 40px
+}
+.padding-48px {
+  padding: 48px
+}
+
+/*----------Aligning text----------*/
+
+.text-center {
+  text-align: center
+}
+
+.text-left {
+  text-align: left
+}
+
+.text-right {
+  text-align: right
+}
