@@ -7,7 +7,7 @@ CSS classes:
 
 "row" is a container for columns.
 
-".col-4", ".col-sm-4", ".col-md-4", ".col-lg-4" are adaptive columns which take up a third of the viewport's width. Adaptive property for columns means they lose their float attribute when the viewport width is less than a certain number of pixels. The smallest class of columns never transform; the others do at viewport width breakpoints of 768px, 992px and 1200px, respectively.
+".col-?", ".col-sm-?", ".col-md-?", ".col-lg-?" are adaptive columns which take up a third of the viewport's width. Adaptive property for columns means they lose their float attribute when the viewport width is less than a certain number of pixels. The smallest class of columns never transform; the others do at viewport width breakpoints of 768px, 992px and 1200px, respectively.
 
 "clearfix" inserts a clearfix pseudoelement after the affected element, which assigns "clear" property to floats in both directions.
 
