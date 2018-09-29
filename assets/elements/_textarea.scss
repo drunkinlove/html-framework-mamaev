@@ -4,20 +4,20 @@
   overflow: auto;
   width: 80%;
   padding: 5px 10px;
-  border: 1px solid cornflowerblue;
+  border: 1px solid #bbb;
   border-radius: 3px;
   
   &:focus {
-    background-color: #eee;
+    border-color: cornflowerblue;
   }
   
   &:read-only {
-    border-color: #bbb;
-    color: #666666;
+    color: black;
+    background-color: #eee;
   }
   
   &:read-only:focus {
-    background-color: #fff;
+    border-color: #bbb;
   }
 
   &:disabled {

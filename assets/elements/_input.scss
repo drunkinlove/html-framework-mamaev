@@ -1,21 +1,21 @@
 @mixin input-general {
   
   padding: 5px 10px;
-  border: 1px solid cornflowerblue;
+  border: 1px solid #bbb;
   border-radius: 3px;
   outline: none;
   
   &:focus {
-    background: #eee;
+    border-color: cornflowerblue;
   }
 
   &:read-only {
+    background: #eee;
     border-color: #bbb;
-    color: #666666;
   }
 
   &:read-only:focus {
-    background: #fff;
+    background: #eee;
   }
 
   &:disabled {

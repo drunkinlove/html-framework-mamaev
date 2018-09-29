@@ -1,1117 +1,346 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain)
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/helpers\/_reset\.scss}line{font-family:\000036}}
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/helpers\/_reset\.scss}line{font-family:\0000327}}
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/helpers\/_reset\.scss}line{font-family:\0000331}}
-body {
-  line-height: 1; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/helpers\/_reset\.scss}line{font-family:\0000334}}
-ol, ul {
-  list-style: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/helpers\/_reset\.scss}line{font-family:\0000337}}
-blockquote, q {
-  quotes: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/helpers\/_reset\.scss}line{font-family:\0000340}}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/helpers\/_reset\.scss}line{font-family:\0000345}}
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_flex\.scss}line{font-family:\000031}}
-.flex-row {
-  display: flex; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_flex\.scss}line{font-family:\000035}}
-.flex-column {
-  display: flex;
-  flex-direction: column; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_flex\.scss}line{font-family:\0000310}}
-.space-between {
-  justify-content: space-between; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_flex\.scss}line{font-family:\0000314}}
-.y-center {
-  align-items: center; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_flex\.scss}line{font-family:\0000318}}
-.x-start {
-  justify-content: flex-start; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_flex\.scss}line{font-family:\0000322}}
-.x-end {
-  justify-content: flex-end; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\000032}}
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000316}}
-.container {
-  background-color: white;
-  padding: 24px;
-  margin-left: 24px;
-  margin-right: 24px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000323}}
-.row {
-  padding: 24px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-lg-2 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 2 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-md-2 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 2 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-sm-2 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 2 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-2 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 2 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-lg-3 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 3 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-md-3 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 3 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-sm-3 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 3 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-3 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 3 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-lg-4 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 4 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-md-4 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 4 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-sm-4 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 4 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-4 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 4 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-lg-6 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 6 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-md-6 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 6 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-sm-6 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 6 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-6 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 6 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-lg-8 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 8 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-md-8 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 8 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-sm-8 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 8 / 12); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000335}}
-.col-8 {
-  border: solid 2px #000;
-  padding: 24px;
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% * 8 / 12); }
-
-@media screen and (max-width: 1200px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000347}}
-  .col-lg-4, .col-lg-2, .col-lg-3, .col-lg-6, .col-lg-8 {
-    float: none;
-    width: 100%; } }
-@media screen and (max-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000354}}
-  .col-lg-4, .col-lg-2, .col-lg-3, .col-lg-6, .col-lg-8, .col-md-4, .col-md-2, .col-md-3, .col-md-6, .col-md-8 {
-    float: none;
-    width: 100%; } }
-@media screen and (max-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_grid\.scss}line{font-family:\0000361}}
-  .col-lg-4, .col-lg-2, .col-lg-3, .col-lg-6, .col-lg-8, .col-md-4, .col-md-2, .col-md-3, .col-md-6, .col-md-8, .col-sm-4, .col-sm-2, .col-sm-3, .col-sm-6, .col-sm-8 {
-    float: none;
-    width: 100%; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\000033}}
-.float-left {
-  float: left; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\000037}}
-.float-right {
-  float: right; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000317}}
-.pos-absolute {
-  position: absolute; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000317}}
-.pos-fixed {
-  position: fixed; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000317}}
-.pos-relative {
-  position: relative; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000317}}
-.pos-sticky {
-  position: sticky; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000325}}
-.text-center {
-  text-align: center; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000329}}
-.text-left {
-  text-align: left; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000333}}
-.text-right {
-  text-align: right; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000343}}
-.margin-8px {
-  margin: 8px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000347}}
-.padding-8px {
-  padding: 8px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000343}}
-.margin-16px {
-  margin: 16px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000347}}
-.padding-16px {
-  padding: 16px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000343}}
-.margin-32px {
-  margin: 32px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000347}}
-.padding-32px {
-  padding: 32px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000343}}
-.margin-40px {
-  margin: 40px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000347}}
-.padding-40px {
-  padding: 40px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000343}}
-.margin-48px {
-  margin: 48px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/global\/_layout\.scss}line{font-family:\0000347}}
-.padding-48px {
-  padding: 48px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000391}}
-.button-lg {
-  height: 72px;
-  font-size: 36px;
-  padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\000035}}
-  .button-lg:active {
-    transform: translateY(2px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\000039}}
-  .button-lg:disabled {
-    border: 1px solid #999999;
-    background-color: #cccccc;
-    color: #666666; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000391}}
-.button-md {
-  height: 48px;
-  font-size: 24px;
-  padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\000035}}
-  .button-md:active {
-    transform: translateY(2px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\000039}}
-  .button-md:disabled {
-    border: 1px solid #999999;
-    background-color: #cccccc;
-    color: #666666; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000391}}
-.button-sm {
-  height: 32px;
-  font-size: 16px;
-  padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\000035}}
-  .button-sm:active {
-    transform: translateY(2px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\000039}}
-  .button-sm:disabled {
-    border: 1px solid #999999;
-    background-color: #cccccc;
-    color: #666666; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000399}}
-.button-prim-lg {
-  height: 72px;
-  font-size: 36px;
-  border: 1px solid green;
-  background-color: #4cbb17;
-  color: white;
-  padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000324}}
-  .button-prim-lg:active {
-    transform: translateY(2px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000328}}
-  .button-prim-lg:hover {
-    background-color: #3a8e11;
-    color: #ffffff;
-    padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000334}}
-  .button-prim-lg:disabled {
-    border: 1px solid #999999;
-    background-color: #cccccc;
-    color: #666666; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000399}}
-.button-prim-md {
-  height: 48px;
-  font-size: 24px;
-  border: 1px solid green;
-  background-color: #4cbb17;
-  color: white;
-  padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000324}}
-  .button-prim-md:active {
-    transform: translateY(2px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000328}}
-  .button-prim-md:hover {
-    background-color: #3a8e11;
-    color: #ffffff;
-    padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000334}}
-  .button-prim-md:disabled {
-    border: 1px solid #999999;
-    background-color: #cccccc;
-    color: #666666; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000399}}
-.button-prim-sm {
-  height: 32px;
-  font-size: 16px;
-  border: 1px solid green;
-  background-color: #4cbb17;
-  color: white;
-  padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000324}}
-  .button-prim-sm:active {
-    transform: translateY(2px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000328}}
-  .button-prim-sm:hover {
-    background-color: #3a8e11;
-    color: #ffffff;
-    padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000334}}
-  .button-prim-sm:disabled {
-    border: 1px solid #999999;
-    background-color: #cccccc;
-    color: #666666; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\00003107}}
-.button-sec-lg {
-  height: 72px;
-  font-size: 36px;
-  border: 1px solid #0066cc;
-  background-color: #0099cc;
-  color: white;
-  padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000348}}
-  .button-sec-lg:active {
-    transform: translateY(2px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000352}}
-  .button-sec-lg:hover {
-    background-color: #00aacc;
-    color: #ffffff;
-    padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000358}}
-  .button-sec-lg:disabled {
-    border: 1px solid #999999;
-    background-color: #cccccc;
-    color: #666666; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\00003107}}
-.button-sec-md {
-  height: 48px;
-  font-size: 24px;
-  border: 1px solid #0066cc;
-  background-color: #0099cc;
-  color: white;
-  padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000348}}
-  .button-sec-md:active {
-    transform: translateY(2px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000352}}
-  .button-sec-md:hover {
-    background-color: #00aacc;
-    color: #ffffff;
-    padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000358}}
-  .button-sec-md:disabled {
-    border: 1px solid #999999;
-    background-color: #cccccc;
-    color: #666666; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\00003107}}
-.button-sec-sm {
-  height: 32px;
-  font-size: 16px;
-  border: 1px solid #0066cc;
-  background-color: #0099cc;
-  color: white;
-  padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000348}}
-  .button-sec-sm:active {
-    transform: translateY(2px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000352}}
-  .button-sec-sm:hover {
-    background-color: #00aacc;
-    color: #ffffff;
-    padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000358}}
-  .button-sec-sm:disabled {
-    border: 1px solid #999999;
-    background-color: #cccccc;
-    color: #666666; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\00003115}}
-.button-warn-lg {
-  height: 72px;
-  font-size: 36px;
-  border: 1px solid red;
-  background-color: #ed2939;
-  color: white;
-  padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000372}}
-  .button-warn-lg:active {
-    transform: translateY(2px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000376}}
-  .button-warn-lg:hover {
-    background-color: #d11221;
-    color: #ffffff;
-    padding: 5px 10px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\00003115}}
-.button-warn-md {
-  height: 48px;
-  font-size: 24px;
-  border: 1px solid red;
-  background-color: #ed2939;
-  color: white;
-  padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000372}}
-  .button-warn-md:active {
-    transform: translateY(2px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000376}}
-  .button-warn-md:hover {
-    background-color: #d11221;
-    color: #ffffff;
-    padding: 5px 10px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\00003115}}
-.button-warn-sm {
-  height: 32px;
-  font-size: 16px;
-  border: 1px solid red;
-  background-color: #ed2939;
-  color: white;
-  padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000372}}
-  .button-warn-sm:active {
-    transform: translateY(2px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\0000376}}
-  .button-warn-sm:hover {
-    background-color: #d11221;
-    color: #ffffff;
-    padding: 5px 10px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\00003124}}
-.square {
-  background: #212;
-  width: 150px;
-  height: 150px;
-  margin: 10px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #655;
-  color: white;
-  font-size: 32px;
-  line-height: 150px;
-  box-sizing: border-box; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_button\.scss}line{font-family:\00003138}}
-.square-sm {
-  background: white;
-  height: 50px;
-  width: 50px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000310}}
-.checkmark-lg {
-  position: absolute;
-  top: 0;
-  left: 8px;
-  height: 48px;
-  width: 48px;
-  background-color: #eee; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000320}}
-.label-lg input ~ .checkmark-lg {
-  background-color: #ccc; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000325}}
-.label-lg input:checked ~ .checkmark-lg {
-  background-color: #2196F3; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000330}}
-.checkmark-lg::after {
-  content: "";
-  position: absolute;
-  display: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000337}}
-.label-lg input:checked ~ .checkmark-lg::after {
-  display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000342}}
-.label-lg .checkmark-lg::after {
-  left: 16px;
-  top: 8px;
-  width: 8px;
-  height: 24px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000355}}
-.label-lg input:disabled ~ .checkmark-lg::after {
-  display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000360}}
-.label-lg input:invalid ~ .checkmark-lg {
-  background-color: #ff3333; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000365}}
-.label-lg input:focus ~ .checkmark-lg {
-  background-color: #51adf6; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000310}}
-.checkmark-md {
-  position: absolute;
-  top: 0;
-  left: 6px;
-  height: 36px;
-  width: 36px;
-  background-color: #eee; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000320}}
-.label-md input ~ .checkmark-md {
-  background-color: #ccc; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000325}}
-.label-md input:checked ~ .checkmark-md {
-  background-color: #2196F3; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000330}}
-.checkmark-md::after {
-  content: "";
-  position: absolute;
-  display: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000337}}
-.label-md input:checked ~ .checkmark-md::after {
-  display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000342}}
-.label-md .checkmark-md::after {
-  left: 12px;
-  top: 6px;
-  width: 6px;
-  height: 18px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000355}}
-.label-md input:disabled ~ .checkmark-md::after {
-  display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000360}}
-.label-md input:invalid ~ .checkmark-md {
-  background-color: #ff3333; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000365}}
-.label-md input:focus ~ .checkmark-md {
-  background-color: #51adf6; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000310}}
-.checkmark-sm {
-  position: absolute;
-  top: 0;
-  left: 4px;
-  height: 24px;
-  width: 24px;
-  background-color: #eee; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000320}}
-.label-sm input ~ .checkmark-sm {
-  background-color: #ccc; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000325}}
-.label-sm input:checked ~ .checkmark-sm {
-  background-color: #2196F3; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000330}}
-.checkmark-sm::after {
-  content: "";
-  position: absolute;
-  display: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000337}}
-.label-sm input:checked ~ .checkmark-sm::after {
-  display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000342}}
-.label-sm .checkmark-sm::after {
-  left: 8px;
-  top: 4px;
-  width: 4px;
-  height: 12px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000355}}
-.label-sm input:disabled ~ .checkmark-sm::after {
-  display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000360}}
-.label-sm input:invalid ~ .checkmark-sm {
-  background-color: #ff3333; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_checkbox\.scss}line{font-family:\0000365}}
-.label-sm input:focus ~ .checkmark-sm {
-  background-color: #51adf6; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000364}}
-.input-lg {
-  height: 72px;
-  font-size: 36px;
-  padding: 5px 10px;
-  border: 1px solid cornflowerblue;
-  border-radius: 3px;
-  outline: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\000038}}
-  .input-lg:focus {
-    background: #eee; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000312}}
-  .input-lg:read-only {
-    border-color: #bbb;
-    color: #666666; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000317}}
-  .input-lg:read-only:focus {
-    background: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000321}}
-  .input-lg:disabled {
-    border-color: #bbb;
-    background: #eee;
-    color: #666666; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000364}}
-.input-md {
-  height: 48px;
-  font-size: 24px;
-  padding: 5px 10px;
-  border: 1px solid cornflowerblue;
-  border-radius: 3px;
-  outline: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\000038}}
-  .input-md:focus {
-    background: #eee; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000312}}
-  .input-md:read-only {
-    border-color: #bbb;
-    color: #666666; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000317}}
-  .input-md:read-only:focus {
-    background: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000321}}
-  .input-md:disabled {
-    border-color: #bbb;
-    background: #eee;
-    color: #666666; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000364}}
-.input-sm {
-  height: 32px;
-  font-size: 16px;
-  padding: 5px 10px;
-  border: 1px solid cornflowerblue;
-  border-radius: 3px;
-  outline: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\000038}}
-  .input-sm:focus {
-    background: #eee; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000312}}
-  .input-sm:read-only {
-    border-color: #bbb;
-    color: #666666; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000317}}
-  .input-sm:read-only:focus {
-    background: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000321}}
-  .input-sm:disabled {
-    border-color: #bbb;
-    background: #eee;
-    color: #666666; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000372}}
-.input-req-lg {
-  height: 72px;
-  font-size: 36px;
-  padding: 5px 10px;
-  border: 1px solid;
-  border-radius: 3px;
-  outline: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000335}}
-  .input-req-lg:required:valid {
-    border-color: green;
-    background: lightgreen; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000340}}
-  .input-req-lg:required:invalid {
-    border-color: salmon;
-    background: #fbdbdb; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000345}}
-  .input-req-lg:required:focus:valid {
-    background: url("https://d33wubrfki0l68.cloudfront.net/6da9ad5ba456a485807728e5aeec4606699efcd6/c3bab/images/check.svg") no-repeat 95% 50%;
-    background-size: 25px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000350}}
-  .input-req-lg:required:focus:invalid {
-    background: url("https://d33wubrfki0l68.cloudfront.net/2efa1fff9f09a98d2248613785130ee6fa5c3e58/c77fb/images/tnt.svg") no-repeat 95% 50%;
-    background-size: 45px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000372}}
-.input-req-md {
-  height: 48px;
-  font-size: 24px;
-  padding: 5px 10px;
-  border: 1px solid;
-  border-radius: 3px;
-  outline: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000335}}
-  .input-req-md:required:valid {
-    border-color: green;
-    background: lightgreen; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000340}}
-  .input-req-md:required:invalid {
-    border-color: salmon;
-    background: #fbdbdb; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000345}}
-  .input-req-md:required:focus:valid {
-    background: url("https://d33wubrfki0l68.cloudfront.net/6da9ad5ba456a485807728e5aeec4606699efcd6/c3bab/images/check.svg") no-repeat 95% 50%;
-    background-size: 25px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000350}}
-  .input-req-md:required:focus:invalid {
-    background: url("https://d33wubrfki0l68.cloudfront.net/2efa1fff9f09a98d2248613785130ee6fa5c3e58/c77fb/images/tnt.svg") no-repeat 95% 50%;
-    background-size: 45px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000372}}
-.input-req-sm {
-  height: 32px;
-  font-size: 16px;
-  padding: 5px 10px;
-  border: 1px solid;
-  border-radius: 3px;
-  outline: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000335}}
-  .input-req-sm:required:valid {
-    border-color: green;
-    background: lightgreen; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000340}}
-  .input-req-sm:required:invalid {
-    border-color: salmon;
-    background: #fbdbdb; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000345}}
-  .input-req-sm:required:focus:valid {
-    background: url("https://d33wubrfki0l68.cloudfront.net/6da9ad5ba456a485807728e5aeec4606699efcd6/c3bab/images/check.svg") no-repeat 95% 50%;
-    background-size: 25px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_input\.scss}line{font-family:\0000350}}
-  .input-req-sm:required:focus:invalid {
-    background: url("https://d33wubrfki0l68.cloudfront.net/2efa1fff9f09a98d2248613785130ee6fa5c3e58/c77fb/images/tnt.svg") no-repeat 95% 50%;
-    background-size: 45px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_label\.scss}line{font-family:\0000310}}
-.label-lg {
-  position: relative;
-  padding-left: 64px;
-  font-size: 36px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_label\.scss}line{font-family:\0000318}}
-.label-lg input {
-  position: absolute;
-  opacity: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_label\.scss}line{font-family:\0000310}}
-.label-md {
-  position: relative;
-  padding-left: 48px;
-  font-size: 27px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_label\.scss}line{font-family:\0000318}}
-.label-md input {
-  position: absolute;
-  opacity: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_label\.scss}line{font-family:\0000310}}
-.label-sm {
-  position: relative;
-  padding-left: 32px;
-  font-size: 18px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_label\.scss}line{font-family:\0000318}}
-.label-sm input {
-  position: absolute;
-  opacity: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000310}}
-.radiomark-lg {
-  position: absolute;
-  top: 0;
-  left: 8px;
-  height: 48px;
-  width: 48px;
-  background-color: #eee;
-  border-radius: 50%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000321}}
-.label-lg input ~ .radiomark-lg {
-  background-color: #ccc; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000326}}
-.label-lg input:checked ~ .radiomark-lg {
-  background-color: #2196F3; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000330}}
-.radiomark-lg::after {
-  content: "";
-  position: absolute;
-  display: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000337}}
-.label-lg input:checked ~ .radiomark-lg::after {
-  display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000342}}
-.label-lg .radiomark-lg::after {
-  top: 16px;
-  left: 16px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: white; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000352}}
-.label-lg input:disabled ~ .radiomark-lg::after {
-  display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000357}}
-.label-lg input:invalid ~ .radiomark-lg {
-  background-color: #ff3333; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000362}}
-.label-lg input:focus ~ .radiomark-lg {
-  background-color: #51adf6; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000310}}
-.radiomark-md {
-  position: absolute;
-  top: 0;
-  left: 6px;
-  height: 36px;
-  width: 36px;
-  background-color: #eee;
-  border-radius: 50%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000321}}
-.label-md input ~ .radiomark-md {
-  background-color: #ccc; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000326}}
-.label-md input:checked ~ .radiomark-md {
-  background-color: #2196F3; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000330}}
-.radiomark-md::after {
-  content: "";
-  position: absolute;
-  display: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000337}}
-.label-md input:checked ~ .radiomark-md::after {
-  display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000342}}
-.label-md .radiomark-md::after {
-  top: 12px;
-  left: 12px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: white; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000352}}
-.label-md input:disabled ~ .radiomark-md::after {
-  display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000357}}
-.label-md input:invalid ~ .radiomark-md {
-  background-color: #ff3333; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000362}}
-.label-md input:focus ~ .radiomark-md {
-  background-color: #51adf6; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000310}}
-.radiomark-sm {
-  position: absolute;
-  top: 0;
-  left: 4px;
-  height: 24px;
-  width: 24px;
-  background-color: #eee;
-  border-radius: 50%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000321}}
-.label-sm input ~ .radiomark-sm {
-  background-color: #ccc; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000326}}
-.label-sm input:checked ~ .radiomark-sm {
-  background-color: #2196F3; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000330}}
-.radiomark-sm::after {
-  content: "";
-  position: absolute;
-  display: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000337}}
-.label-sm input:checked ~ .radiomark-sm::after {
-  display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000342}}
-.label-sm .radiomark-sm::after {
-  top: 8px;
-  left: 8px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000352}}
-.label-sm input:disabled ~ .radiomark-sm::after {
-  display: block; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000357}}
-.label-sm input:invalid ~ .radiomark-sm {
-  background-color: #ff3333; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_radio\.scss}line{font-family:\0000362}}
-.label-sm input:focus ~ .radiomark-sm {
-  background-color: #51adf6; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_textarea\.scss}line{font-family:\000031}}
-.textarea, .textarea-err {
-  outline: none;
-  overflow: auto;
-  width: 80%;
-  padding: 5px 10px;
-  border: 1px solid cornflowerblue;
-  border-radius: 3px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_textarea\.scss}line{font-family:\0000310}}
-  .textarea:focus, .textarea-err:focus {
-    background-color: #eee; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_textarea\.scss}line{font-family:\0000314}}
-  .textarea:read-only, .textarea-err:read-only {
-    border-color: #bbb;
-    color: #666666; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_textarea\.scss}line{font-family:\0000319}}
-  .textarea:read-only:focus, .textarea-err:read-only:focus {
-    background-color: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_textarea\.scss}line{font-family:\0000323}}
-  .textarea:disabled, .textarea-err:disabled {
-    border-color: #bbb;
-    background-color: #eee;
-    color: #666666;
-    color: #666666; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_textarea\.scss}line{font-family:\0000333}}
-  .textarea-err {
-    border: 1px solid salmon; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_title\.scss}line{font-family:\000039}}
-.heading-lg {
-  font-size: 32pt; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_title\.scss}line{font-family:\000039}}
-.heading-md {
-  font-size: 24pt; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/assets\/elements\/_title\.scss}line{font-family:\000039}}
-.heading-sm {
-  font-size: 16pt; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/User\/Desktop\/html-framework-mamaev\/css\/style\.scss}line{font-family:\000033}}
-html {
-  background: #323; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+.flex-row { display: flex; }
+
+.flex-column { display: flex; flex-direction: column; }
+
+.space-between { justify-content: space-between; }
+
+.y-center { align-items: center; }
+
+.x-start { justify-content: flex-start; }
+
+.x-end { justify-content: flex-end; }
+
+.clearfix:after { content: ""; display: table; clear: both; }
+
+.container { background-color: white; padding: 24px; margin-left: 24px; margin-right: 24px; }
+
+.row { padding: 24px; }
+
+.col-lg-2 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 2 / 12); }
+
+.col-md-2 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 2 / 12); }
+
+.col-sm-2 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 2 / 12); }
+
+.col-2 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 2 / 12); }
+
+.col-lg-3 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 3 / 12); }
+
+.col-md-3 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 3 / 12); }
+
+.col-sm-3 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 3 / 12); }
+
+.col-3 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 3 / 12); }
+
+.col-lg-4 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 4 / 12); }
+
+.col-md-4 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 4 / 12); }
+
+.col-sm-4 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 4 / 12); }
+
+.col-4 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 4 / 12); }
+
+.col-lg-6 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 6 / 12); }
+
+.col-md-6 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 6 / 12); }
+
+.col-sm-6 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 6 / 12); }
+
+.col-6 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 6 / 12); }
+
+.col-lg-8 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 8 / 12); }
+
+.col-md-8 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 8 / 12); }
+
+.col-sm-8 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 8 / 12); }
+
+.col-8 { border: solid 2px #000; padding: 24px; float: left; box-sizing: border-box; width: calc(100% * 8 / 12); }
+
+@media screen and (max-width: 1200px) { .col-lg-4, .col-lg-2, .col-lg-3, .col-lg-6, .col-lg-8 { float: none; width: 100%; } }
+@media screen and (max-width: 992px) { .col-lg-4, .col-lg-2, .col-lg-3, .col-lg-6, .col-lg-8, .col-md-4, .col-md-2, .col-md-3, .col-md-6, .col-md-8 { float: none; width: 100%; } }
+@media screen and (max-width: 768px) { .col-lg-4, .col-lg-2, .col-lg-3, .col-lg-6, .col-lg-8, .col-md-4, .col-md-2, .col-md-3, .col-md-6, .col-md-8, .col-sm-4, .col-sm-2, .col-sm-3, .col-sm-6, .col-sm-8 { float: none; width: 100%; } }
+.float-left { float: left; }
+
+.float-right { float: right; }
+
+.pos-absolute { position: absolute; }
+
+.pos-fixed { position: fixed; }
+
+.pos-relative { position: relative; }
+
+.pos-sticky { position: sticky; }
+
+.text-center { text-align: center; }
+
+.text-left { text-align: left; }
+
+.text-right { text-align: right; }
+
+.margin-8px { margin: 8px; }
+
+.padding-8px { padding: 8px; }
+
+.margin-16px { margin: 16px; }
+
+.padding-16px { padding: 16px; }
+
+.margin-32px { margin: 32px; }
+
+.padding-32px { padding: 32px; }
+
+.margin-40px { margin: 40px; }
+
+.padding-40px { padding: 40px; }
+
+.margin-48px { margin: 48px; }
+
+.padding-48px { padding: 48px; }
+
+.button-lg { height: 72px; font-size: 36px; padding: 5px 10px; }
+.button-lg:active { transform: translateY(2px); }
+.button-lg:disabled { border: 1px solid #999999; background-color: #cccccc; color: #666666; }
+
+.button-md { height: 48px; font-size: 24px; padding: 5px 10px; }
+.button-md:active { transform: translateY(2px); }
+.button-md:disabled { border: 1px solid #999999; background-color: #cccccc; color: #666666; }
+
+.button-sm { height: 32px; font-size: 16px; padding: 5px 10px; }
+.button-sm:active { transform: translateY(2px); }
+.button-sm:disabled { border: 1px solid #999999; background-color: #cccccc; color: #666666; }
+
+.button-prim-lg { height: 72px; font-size: 36px; border: 1px solid green; background-color: #4cbb17; color: white; padding: 5px 10px; }
+.button-prim-lg:active { transform: translateY(2px); }
+.button-prim-lg:hover { background-color: #3a8e11; color: #ffffff; padding: 5px 10px; }
+.button-prim-lg:disabled { border: 1px solid #999999; background-color: #cccccc; color: #666666; }
+
+.button-prim-md { height: 48px; font-size: 24px; border: 1px solid green; background-color: #4cbb17; color: white; padding: 5px 10px; }
+.button-prim-md:active { transform: translateY(2px); }
+.button-prim-md:hover { background-color: #3a8e11; color: #ffffff; padding: 5px 10px; }
+.button-prim-md:disabled { border: 1px solid #999999; background-color: #cccccc; color: #666666; }
+
+.button-prim-sm { height: 32px; font-size: 16px; border: 1px solid green; background-color: #4cbb17; color: white; padding: 5px 10px; }
+.button-prim-sm:active { transform: translateY(2px); }
+.button-prim-sm:hover { background-color: #3a8e11; color: #ffffff; padding: 5px 10px; }
+.button-prim-sm:disabled { border: 1px solid #999999; background-color: #cccccc; color: #666666; }
+
+.button-sec-lg { height: 72px; font-size: 36px; border: 1px solid #0066cc; background-color: #0099cc; color: white; padding: 5px 10px; }
+.button-sec-lg:active { transform: translateY(2px); }
+.button-sec-lg:hover { background-color: #00aacc; color: #ffffff; padding: 5px 10px; }
+.button-sec-lg:disabled { border: 1px solid #999999; background-color: #cccccc; color: #666666; }
+
+.button-sec-md { height: 48px; font-size: 24px; border: 1px solid #0066cc; background-color: #0099cc; color: white; padding: 5px 10px; }
+.button-sec-md:active { transform: translateY(2px); }
+.button-sec-md:hover { background-color: #00aacc; color: #ffffff; padding: 5px 10px; }
+.button-sec-md:disabled { border: 1px solid #999999; background-color: #cccccc; color: #666666; }
+
+.button-sec-sm { height: 32px; font-size: 16px; border: 1px solid #0066cc; background-color: #0099cc; color: white; padding: 5px 10px; }
+.button-sec-sm:active { transform: translateY(2px); }
+.button-sec-sm:hover { background-color: #00aacc; color: #ffffff; padding: 5px 10px; }
+.button-sec-sm:disabled { border: 1px solid #999999; background-color: #cccccc; color: #666666; }
+
+.button-warn-lg { height: 72px; font-size: 36px; border: 1px solid red; background-color: #ed2939; color: white; padding: 5px 10px; }
+.button-warn-lg:active { transform: translateY(2px); }
+.button-warn-lg:hover { background-color: #d11221; color: #ffffff; padding: 5px 10px; }
+
+.button-warn-md { height: 48px; font-size: 24px; border: 1px solid red; background-color: #ed2939; color: white; padding: 5px 10px; }
+.button-warn-md:active { transform: translateY(2px); }
+.button-warn-md:hover { background-color: #d11221; color: #ffffff; padding: 5px 10px; }
+
+.button-warn-sm { height: 32px; font-size: 16px; border: 1px solid red; background-color: #ed2939; color: white; padding: 5px 10px; }
+.button-warn-sm:active { transform: translateY(2px); }
+.button-warn-sm:hover { background-color: #d11221; color: #ffffff; padding: 5px 10px; }
+
+.square { background: #212; width: 150px; height: 150px; border: solid 3px #655; color: white; font-size: 32px; line-height: 150px; box-sizing: border-box; }
+
+.square-sm { background: white; height: 50px; width: 50px; }
+
+.checkmark-lg { position: absolute; top: 0; left: 8px; height: 48px; width: 48px; background-color: #eee; }
+
+.label-lg input ~ .checkmark-lg { background-color: #ccc; }
+
+.label-lg input:checked ~ .checkmark-lg { background-color: #2196F3; }
+
+.checkmark-lg::after { content: ""; position: absolute; display: none; }
+
+.label-lg input:checked ~ .checkmark-lg::after { display: block; }
+
+.label-lg .checkmark-lg::after { left: 16px; top: 8px; width: 8px; height: 24px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+.label-lg input:disabled ~ .checkmark-lg::after { display: block; }
+
+.label-lg input:invalid ~ .checkmark-lg { background-color: #ff3333; }
+
+.label-lg input:focus ~ .checkmark-lg { background-color: #51adf6; }
+
+.checkmark-md { position: absolute; top: 0; left: 6px; height: 36px; width: 36px; background-color: #eee; }
+
+.label-md input ~ .checkmark-md { background-color: #ccc; }
+
+.label-md input:checked ~ .checkmark-md { background-color: #2196F3; }
+
+.checkmark-md::after { content: ""; position: absolute; display: none; }
+
+.label-md input:checked ~ .checkmark-md::after { display: block; }
+
+.label-md .checkmark-md::after { left: 12px; top: 6px; width: 6px; height: 18px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+.label-md input:disabled ~ .checkmark-md::after { display: block; }
+
+.label-md input:invalid ~ .checkmark-md { background-color: #ff3333; }
+
+.label-md input:focus ~ .checkmark-md { background-color: #51adf6; }
+
+.checkmark-sm { position: absolute; top: 0; left: 4px; height: 24px; width: 24px; background-color: #eee; }
+
+.label-sm input ~ .checkmark-sm { background-color: #ccc; }
+
+.label-sm input:checked ~ .checkmark-sm { background-color: #2196F3; }
+
+.checkmark-sm::after { content: ""; position: absolute; display: none; }
+
+.label-sm input:checked ~ .checkmark-sm::after { display: block; }
+
+.label-sm .checkmark-sm::after { left: 8px; top: 4px; width: 4px; height: 12px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+.label-sm input:disabled ~ .checkmark-sm::after { display: block; }
+
+.label-sm input:invalid ~ .checkmark-sm { background-color: #ff3333; }
+
+.label-sm input:focus ~ .checkmark-sm { background-color: #51adf6; }
+
+.input-lg { height: 72px; font-size: 36px; padding: 5px 10px; border: 1px solid #bbb; border-radius: 3px; outline: none; }
+.input-lg:focus { border-color: cornflowerblue; }
+.input-lg:read-only { background: #eee; border-color: #bbb; }
+.input-lg:read-only:focus { background: #eee; }
+.input-lg:disabled { border-color: #bbb; background: #eee; color: #666666; }
+
+.input-md { height: 48px; font-size: 24px; padding: 5px 10px; border: 1px solid #bbb; border-radius: 3px; outline: none; }
+.input-md:focus { border-color: cornflowerblue; }
+.input-md:read-only { background: #eee; border-color: #bbb; }
+.input-md:read-only:focus { background: #eee; }
+.input-md:disabled { border-color: #bbb; background: #eee; color: #666666; }
+
+.input-sm { height: 32px; font-size: 16px; padding: 5px 10px; border: 1px solid #bbb; border-radius: 3px; outline: none; }
+.input-sm:focus { border-color: cornflowerblue; }
+.input-sm:read-only { background: #eee; border-color: #bbb; }
+.input-sm:read-only:focus { background: #eee; }
+.input-sm:disabled { border-color: #bbb; background: #eee; color: #666666; }
+
+.input-req-lg { height: 72px; font-size: 36px; padding: 5px 10px; border: 1px solid; border-radius: 3px; outline: none; }
+.input-req-lg:required:valid { border-color: green; background: lightgreen; }
+.input-req-lg:required:invalid { border-color: salmon; background: #fbdbdb; }
+.input-req-lg:required:focus:valid { background: url("https://d33wubrfki0l68.cloudfront.net/6da9ad5ba456a485807728e5aeec4606699efcd6/c3bab/images/check.svg") no-repeat 95% 50%; background-size: 25px; }
+.input-req-lg:required:focus:invalid { background: url("https://d33wubrfki0l68.cloudfront.net/2efa1fff9f09a98d2248613785130ee6fa5c3e58/c77fb/images/tnt.svg") no-repeat 95% 50%; background-size: 45px; }
+
+.input-req-md { height: 48px; font-size: 24px; padding: 5px 10px; border: 1px solid; border-radius: 3px; outline: none; }
+.input-req-md:required:valid { border-color: green; background: lightgreen; }
+.input-req-md:required:invalid { border-color: salmon; background: #fbdbdb; }
+.input-req-md:required:focus:valid { background: url("https://d33wubrfki0l68.cloudfront.net/6da9ad5ba456a485807728e5aeec4606699efcd6/c3bab/images/check.svg") no-repeat 95% 50%; background-size: 25px; }
+.input-req-md:required:focus:invalid { background: url("https://d33wubrfki0l68.cloudfront.net/2efa1fff9f09a98d2248613785130ee6fa5c3e58/c77fb/images/tnt.svg") no-repeat 95% 50%; background-size: 45px; }
+
+.input-req-sm { height: 32px; font-size: 16px; padding: 5px 10px; border: 1px solid; border-radius: 3px; outline: none; }
+.input-req-sm:required:valid { border-color: green; background: lightgreen; }
+.input-req-sm:required:invalid { border-color: salmon; background: #fbdbdb; }
+.input-req-sm:required:focus:valid { background: url("https://d33wubrfki0l68.cloudfront.net/6da9ad5ba456a485807728e5aeec4606699efcd6/c3bab/images/check.svg") no-repeat 95% 50%; background-size: 25px; }
+.input-req-sm:required:focus:invalid { background: url("https://d33wubrfki0l68.cloudfront.net/2efa1fff9f09a98d2248613785130ee6fa5c3e58/c77fb/images/tnt.svg") no-repeat 95% 50%; background-size: 45px; }
+
+.label-lg { position: relative; padding-left: 64px; font-size: 36px; }
+
+.label-lg input { position: absolute; opacity: 0; }
+
+.label-md { position: relative; padding-left: 48px; font-size: 27px; }
+
+.label-md input { position: absolute; opacity: 0; }
+
+.label-sm { position: relative; padding-left: 32px; font-size: 18px; }
+
+.label-sm input { position: absolute; opacity: 0; }
+
+.radiomark-lg { position: absolute; top: 0; left: 8px; height: 48px; width: 48px; background-color: #eee; border-radius: 50%; }
+
+.label-lg input ~ .radiomark-lg { background-color: #ccc; }
+
+.label-lg input:checked ~ .radiomark-lg { background-color: #2196F3; }
+
+.radiomark-lg::after { content: ""; position: absolute; display: none; }
+
+.label-lg input:checked ~ .radiomark-lg::after { display: block; }
+
+.label-lg .radiomark-lg::after { top: 16px; left: 16px; width: 16px; height: 16px; border-radius: 50%; background: white; }
+
+.label-lg input:disabled ~ .radiomark-lg::after { display: block; }
+
+.label-lg input:invalid ~ .radiomark-lg { background-color: #ff3333; }
+
+.label-lg input:focus ~ .radiomark-lg { background-color: #51adf6; }
+
+.radiomark-md { position: absolute; top: 0; left: 6px; height: 36px; width: 36px; background-color: #eee; border-radius: 50%; }
+
+.label-md input ~ .radiomark-md { background-color: #ccc; }
+
+.label-md input:checked ~ .radiomark-md { background-color: #2196F3; }
+
+.radiomark-md::after { content: ""; position: absolute; display: none; }
+
+.label-md input:checked ~ .radiomark-md::after { display: block; }
+
+.label-md .radiomark-md::after { top: 12px; left: 12px; width: 12px; height: 12px; border-radius: 50%; background: white; }
+
+.label-md input:disabled ~ .radiomark-md::after { display: block; }
+
+.label-md input:invalid ~ .radiomark-md { background-color: #ff3333; }
+
+.label-md input:focus ~ .radiomark-md { background-color: #51adf6; }
+
+.radiomark-sm { position: absolute; top: 0; left: 4px; height: 24px; width: 24px; background-color: #eee; border-radius: 50%; }
+
+.label-sm input ~ .radiomark-sm { background-color: #ccc; }
+
+.label-sm input:checked ~ .radiomark-sm { background-color: #2196F3; }
+
+.radiomark-sm::after { content: ""; position: absolute; display: none; }
+
+.label-sm input:checked ~ .radiomark-sm::after { display: block; }
+
+.label-sm .radiomark-sm::after { top: 8px; left: 8px; width: 8px; height: 8px; border-radius: 50%; background: white; }
+
+.label-sm input:disabled ~ .radiomark-sm::after { display: block; }
+
+.label-sm input:invalid ~ .radiomark-sm { background-color: #ff3333; }
+
+.label-sm input:focus ~ .radiomark-sm { background-color: #51adf6; }
+
+.textarea, .textarea-err { outline: none; overflow: auto; width: 80%; padding: 5px 10px; border: 1px solid #bbb; border-radius: 3px; }
+.textarea:focus, .textarea-err:focus { border-color: cornflowerblue; }
+.textarea:read-only, .textarea-err:read-only { color: black; background-color: #eee; }
+.textarea:read-only:focus, .textarea-err:read-only:focus { border-color: #bbb; }
+.textarea:disabled, .textarea-err:disabled { border-color: #bbb; background-color: #eee; color: #666666; color: #666666; }
+.textarea-err { border: 1px solid salmon; }
+
+.heading-lg { font-size: 32pt; }
+
+.heading-md { font-size: 24pt; }
+
+.heading-sm { font-size: 16pt; }
+
+html { background: #323; }
 
 /*# sourceMappingURL=style.css.map */

@@ -23,15 +23,15 @@ $positions: 'absolute', 'fixed', 'relative', 'sticky';
 // Aligning text
 
 .text-center {
-	text-align: center
+	text-align: center;
 }
 
 .text-left {
-	text-align: left
+	text-align: left;
 }
 
 .text-right {
-	text-align: right
+	text-align: right;
 }
 
 
@@ -41,10 +41,10 @@ $mp_dims: 8px, 16px, 32px, 40px, 48px;
 
 @each $dim in $mp_dims {
 	.margin-#{$dim} {
-		margin: #{$dim}
+		margin: $dim;
 	}
 
 	.padding-#{$dim} {
-		padding: #{$dim}
+		padding: $dim;
 	}
 }
