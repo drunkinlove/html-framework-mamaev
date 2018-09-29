@@ -1,0 +1,50 @@
+// Aligning general elements: float
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+
+// Aligning general elements: position
+
+$positions: 'absolute', 'fixed', 'relative', 'sticky';
+
+@each $position in $positions {
+	.pos-#{$position} {
+		position: #{$position};
+	}
+}
+
+
+// Aligning text
+
+.text-center {
+	text-align: center
+}
+
+.text-left {
+	text-align: left
+}
+
+.text-right {
+	text-align: right
+}
+
+
+// Margins & padding: reworked using @each.
+
+$mp_dims: 8px, 16px, 32px, 40px, 48px;
+
+@each $dim in $mp_dims {
+	.margin-#{$dim} {
+		margin: #{$dim}
+	}
+
+	.padding-#{$dim} {
+		padding: #{$dim}
+	}
+}

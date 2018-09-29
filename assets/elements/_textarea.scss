@@ -1,0 +1,37 @@
+.textarea {
+  
+  outline: none;
+  overflow: auto;
+  width: 80%;
+  padding: 5px 10px;
+  border: 1px solid cornflowerblue;
+  border-radius: 3px;
+  
+  &:focus {
+    background-color: #eee;
+  }
+  
+  &:read-only {
+    border-color: #bbb;
+    color: #666666;
+  }
+  
+  &:read-only:focus {
+    background-color: #fff;
+  }
+
+  &:disabled {
+    border-color: #bbb;
+    background-color: #eee;
+    color: #666666;
+    color: #666666;
+  }
+
+  // I wasn't sure how to code the textarea in the 'error' condition, so I
+  // decided to create an additional class. Most likely this is for JS calls.
+  // This only changes the border color, actually.
+  &-err {
+    @extend .textarea;
+    border: 1px solid salmon;
+  }
+}

@@ -1,0 +1,77 @@
+@mixin input-general {
+  
+  padding: 5px 10px;
+  border: 1px solid cornflowerblue;
+  border-radius: 3px;
+  outline: none;
+  
+  &:focus {
+    background: #eee;
+  }
+
+  &:read-only {
+    border-color: #bbb;
+    color: #666666;
+  }
+
+  &:read-only:focus {
+    background: #fff;
+  }
+
+  &:disabled {
+    border-color: #bbb;
+    background: #eee;
+    color: #666666;
+  }
+}
+
+@mixin input-required {
+  
+  padding: 5px 10px;
+  border: 1px solid;
+  border-radius: 3px;
+  outline: none;
+  
+  &:required:valid {
+    border-color: green;
+    background: lightgreen;
+  }
+  
+  &:required:invalid {
+    border-color: salmon;
+    background: lighten(lightcoral, 20%);
+  }
+
+  &:required:focus:valid {
+    background: url("https://d33wubrfki0l68.cloudfront.net/6da9ad5ba456a485807728e5aeec4606699efcd6/c3bab/images/check.svg") no-repeat 95% 50%;
+    background-size: 25px;
+  }
+  
+   &:required:focus:invalid {
+    background: url("https://d33wubrfki0l68.cloudfront.net/2efa1fff9f09a98d2248613785130ee6fa5c3e58/c77fb/images/tnt.svg") no-repeat 95% 50%;
+    background-size: 45px;
+  }
+}
+
+
+$input_dims: (
+	lg: 72px,
+	md: 48px,
+	sm: 32px,
+);
+
+@each $size, $dim in $input_dims {
+  .input-#{$size} {
+    height: $dim;
+    font-size: $dim / 2;
+    @include input-general
+   }
+}
+
+@each $size, $dim in $input_dims {
+  .input-req-#{$size} {
+    height: $dim;
+    font-size: $dim / 2;
+    @include input-required
+   }
+}

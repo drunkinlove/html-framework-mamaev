@@ -1,0 +1,12 @@
+$font-sizes: (
+	lg: 32pt,
+	md: 24pt,
+	sm: 16pt,
+);
+
+
+@each $size, $points in $font-sizes {
+	.heading-#{$size} {
+		font-size: $points;
+	}
+}

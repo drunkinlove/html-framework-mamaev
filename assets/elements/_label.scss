@@ -1,0 +1,22 @@
+$label_dims: (
+	lg: 32px,
+	md: 24px,
+	sm: 16px,
+);
+
+
+@each $size, $dim in $label-dims {
+
+	.label-#{$size} {
+		position: relative;
+		padding-left: $dim * 2;
+		font-size: $dim * 9 / 8;
+	}
+
+
+	// Hiding default checkbox or radio
+	.label-#{$size} input {
+		position: absolute;
+		opacity: 0;
+	}
+}

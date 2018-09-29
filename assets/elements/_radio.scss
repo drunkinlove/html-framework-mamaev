@@ -1,0 +1,67 @@
+$radio_dims: (
+	lg: 32px,
+	md: 24px,
+	sm: 16px,
+);
+
+@each $size, $dim in $radio-dims {
+
+	// Setting up radiomark
+	.radiomark-#{$size} {
+		position: absolute;
+		top: 0;
+		left: $dim / 4;
+		height: $dim * 3 / 2;
+		width: $dim * 3 / 2;
+		background-color: #eee;
+		border-radius: 50%;
+	}
+
+	// Adding hover effect
+	.label-#{$size} input ~ .radiomark-#{$size} {
+		background-color: #ccc;
+	}
+
+	// Adding checked effect
+	.label-#{$size} input:checked ~ .radiomark-#{$size} {
+		background-color: #2196F3;
+	}
+
+	.radiomark-#{$size}::after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	// Setting radiomark to be visible when radio is checked
+	.label-#{$size} input:checked ~ .radiomark-#{$size}::after {
+		display: block;
+	}
+
+	// Styling the radiomark
+	.label-#{$size} .radiomark-#{$size}::after {
+		top: $dim / 2;
+		left: $dim / 2;
+		width: $dim / 2;
+		height: $dim / 2;
+		border-radius: 50%;
+		background: white;
+	}
+
+	// Disabled behavior
+	.label-#{$size} input:disabled ~ .radiomark-#{$size}::after {
+		display: block;
+	}
+
+	// Invalid behavior
+	.label-#{$size} input:invalid ~ .radiomark-#{$size} {
+		background-color: lighten(red, 10%);
+	}
+
+	// Focused behavior
+  	.label-#{$size} input:focus ~ .radiomark-#{$size} {
+		background-color: lighten(#2196F3, 10%);
+	}
+
+  
+}

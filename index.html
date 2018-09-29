@@ -4,12 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>adaptive framework</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -20,7 +15,7 @@
     <div class="col-md-4"> </div>
     <div class="col-md-4"> </div>
     <div class="col-md-4"> </div>
-    <i>Clearfix</i> is used to prevent floating elements from escaping their container.
+    <br><i>Clearfix</i> is used to prevent floating elements from escaping their container.
   </div>
   <div class="row">
     Columns with no <i>clearfix</i>: <br>
@@ -33,8 +28,8 @@
 <div class="container clearfix">
 The <i>pull-left</i> and <i>pull-right</i> classes are responsible for anchoring elements to the left and right borders of the container, respectively. <br>
 Demonstration of <i>pull-left</i> and <i>pull-right</i>:<br>
-  <div class="square pull-left"></div>
-  <div class="square pull-right"></div>
+  <div class="square float-left"></div>
+  <div class="square float-right"></div>
 </div>
 
 <div class="container">The <i>flex-row</i> class is to be applied to a container, and is responsible for aligning child elements in a row. <br> Demonstration of <i>flex-row</i>:</div>
@@ -75,23 +70,83 @@ Demonstration of <i>pull-left</i> and <i>pull-right</i>:<br>
 </div>
 <div class="container">Demonstration of margins:</div>
 <div class="container flex-row">
-  <div class="square margin-8px text-center">8px</div>
-  <div class="square margin-16px text-center">16px</div>
+  <div class="square text-center">8px</div>
+  <div class="square text-center">16px</div>
   <div class="square margin-32px text-center">32px</div>
   <div class="square margin-40px text-center">40px</div>
   <div class="square margin-48px text-center">48px</div>
 </div>
 <div class="container">Demonstration of padding:</div>
 <div class="container flex-row">
-  <div class="square padding-8px"><div class="square-sm"></div></div>
+  <div class="square"><div class="square-sm"></div></div>
   <div class="square padding-16px"><div class="square-sm"></div></div>
   <div class="square padding-32px"><div class="square-sm"></div></div>
   <div class="square padding-40px"><div class="square-sm"></div></div>
   <div class="square padding-48px"><div class="square-sm"></div></div>
 </div>
   
-  
+<div class="container">
+<h1 class="heading-lg text-center">A form</h1>
 
+<h2 class="heading-sm">Checkboxes</h2>
+<div class="container">
+<label class="label-sm">
+  <input type="checkbox" name="group1">
+  <span class="checkmark-sm"></span>
+</label>
+<label class="label-sm">General
+  <input type="checkbox" name="group1">
+  <span class="checkmark-sm"></span>
+</label>
+<label class="label-sm">Disabled
+  <input type="checkbox" name="group1" disabled>
+  <span class="checkmark-sm"></span>
+</label>
+<label class="label-sm">Error?
+  <input type="checkbox" name="group1" required>
+  <span class="checkmark-sm"></span>
+</label> </div>
+
+<h2 class="heading-sm">Radio buttons</h2>
+<div class="container">
+<label class="label-sm  margin-24px">
+  <input type="radio" name="group1">
+  <span class="radiomark-sm"></span>
+</label>
+<label class="label-sm  margin-24px">General
+  <input type="radio" name="group1">
+  <span class="radiomark-sm"></span>
+</label>
+<label class="label-sm margin-24px">Disabled
+  <input type="radio" name="group1" disabled>
+  <span class="radiomark-sm"></span>
+</label>
+<label class="label-sm margin-24px">Error?
+  <input type="radio" name="group2" required>
+  <span class="radiomark-sm"></span>
+</label> </div>
+
+<h2 class="heading-sm">Inputs</h2>
+<div class="container">
+<input class="input-sm" placeholder="General"/>
+<input class="input-sm" readonly placeholder="Read-only"/> 
+<input class="input-sm" placeholder="Disabled" disabled/> 
+<input class="input-req-sm" placeholder="Required" required/> </div>
+
+<h2 class="heading-sm">Textareas</h2>
+<div class="container">
+<textarea class="textarea" placeholder="General"></textarea> 
+<textarea class="textarea" placeholder="Read-only" readonly></textarea> 
+<textarea class="textarea" placeholder="Disabled" disabled></textarea> 
+<textarea class="textarea-err" placeholder="Error?"></textarea></div>
+
+<h2 class="heading-sm">Buttons</h2>
+<div class="container">
+<button class="button-sm">General</button>
+<button class="button-prim-sm">Primary</button>
+<button class="button-sec-sm">Secondary</button>
+<button class="button-warn-sm">Warning</button>
+</div> </div>
 </body>
 
 </html>

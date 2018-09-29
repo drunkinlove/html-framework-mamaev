@@ -1,0 +1,68 @@
+$checkbox_dims: (
+	lg: 32px,
+	md: 24px,
+	sm: 16px,
+);
+
+@each $size, $dim in $checkbox-dims {
+	
+	// Setting up checkmark
+	.checkmark-#{$size} {
+		position: absolute;
+		top: 0;
+		left: $dim / 4;
+		height: $dim * 3 / 2;
+		width: $dim * 3 / 2;
+		background-color: #eee;
+	}
+
+	// Adding hover effect
+	.label-#{$size} input ~ .checkmark-#{$size} {
+		background-color: #ccc;
+	}
+
+	// Adding checked effect
+	.label-#{$size} input:checked ~ .checkmark-#{$size} {
+		background-color: #2196F3;
+	}
+
+	// Note to self: ":::after" is often used to display additional content.
+	.checkmark-#{$size}::after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	// Setting checkmark to be visible when checkbox is checked
+	.label-#{$size} input:checked ~ .checkmark-#{$size}::after {
+		display: block;
+	}
+
+	// Styling the checkmark
+	.label-#{$size} .checkmark-#{$size}::after {
+		left: $dim / 2;
+		top: $dim / 4;
+		width: $dim / 4;
+		height: $dim * 3 / 4 ;
+		border: solid white;
+		border-width: 0 3px 3px 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	// Disabled behavior
+	.label-#{$size} input:disabled ~ .checkmark-#{$size}::after {
+		display: block;
+	}
+
+	// Invalid behavior
+	.label-#{$size} input:invalid ~ .checkmark-#{$size} {
+		background-color: lighten(red, 10%);
+	}
+
+	// Focused behavior
+  	.label-#{$size} input:focus ~ .checkmark-#{$size} {
+		background-color: lighten(#2196F3, 10%);
+	}
+}
