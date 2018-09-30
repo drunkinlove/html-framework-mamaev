@@ -247,12 +247,12 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .label-sm input:focus ~ .checkmark-sm { border: solid 1px gray; }
 
-.input-lg { height: 72px; font-size: 36px; padding: 5px 10px; border: 1px solid #bbb; border-radius: 3px; outline: none; }
+.input-lg { height: 56px; font-size: 28px; padding: 5px 10px; border: 1px solid #bbb; border-radius: 3px; outline: none; }
 .input-lg:focus { border-color: #2196F3; }
 .input-lg:read-only { background: #eee; border-color: #bbb; }
 .input-lg:disabled { border-color: #bbb; background: #eee; color: #666; }
 
-.input-md { height: 48px; font-size: 24px; padding: 5px 10px; border: 1px solid #bbb; border-radius: 3px; outline: none; }
+.input-md { height: 40px; font-size: 20px; padding: 5px 10px; border: 1px solid #bbb; border-radius: 3px; outline: none; }
 .input-md:focus { border-color: #2196F3; }
 .input-md:read-only { background: #eee; border-color: #bbb; }
 .input-md:disabled { border-color: #bbb; background: #eee; color: #666; }
@@ -262,13 +262,13 @@ table { border-collapse: collapse; border-spacing: 0; }
 .input-sm:read-only { background: #eee; border-color: #bbb; }
 .input-sm:disabled { border-color: #bbb; background: #eee; color: #666; }
 
-.input-req-lg { height: 72px; font-size: 36px; padding: 5px 10px; border: 1px solid #bbb; border-radius: 3px; outline: none; }
+.input-req-lg { height: 56px; font-size: 28px; padding: 5px 10px; border: 1px solid #bbb; border-radius: 3px; outline: none; }
 .input-req-lg:required:valid { border-color: green; background: lightgreen; }
 .input-req-lg:required:invalid { border-color: #ff3333; background: pink; }
 .input-req-lg:required:focus:valid { background: url("https://d33wubrfki0l68.cloudfront.net/6da9ad5ba456a485807728e5aeec4606699efcd6/c3bab/images/check.svg") no-repeat 95% 50%; background-size: 25px; }
 .input-req-lg:required:focus:invalid { background: url("https://d33wubrfki0l68.cloudfront.net/2efa1fff9f09a98d2248613785130ee6fa5c3e58/c77fb/images/tnt.svg") no-repeat 95% 50%; background-size: 45px; }
 
-.input-req-md { height: 48px; font-size: 24px; padding: 5px 10px; border: 1px solid #bbb; border-radius: 3px; outline: none; }
+.input-req-md { height: 40px; font-size: 20px; padding: 5px 10px; border: 1px solid #bbb; border-radius: 3px; outline: none; }
 .input-req-md:required:valid { border-color: green; background: lightgreen; }
 .input-req-md:required:invalid { border-color: #ff3333; background: pink; }
 .input-req-md:required:focus:valid { background: url("https://d33wubrfki0l68.cloudfront.net/6da9ad5ba456a485807728e5aeec4606699efcd6/c3bab/images/check.svg") no-repeat 95% 50%; background-size: 25px; }

@@ -29,8 +29,14 @@ $radio_dims: (
 );
 
 $input_dims: (
-	lg: 72px,
-	md: 48px,
+	lg: 56px,
+	md: 40px,
 	sm: 32px,
 );
 
+
+
+// Column sizes
+
+$col_widths: 2, 3, 4, 6, 8;
+$col_sizes: '-lg', '-md', '-sm', '';
