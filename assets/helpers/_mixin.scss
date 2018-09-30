@@ -1,0 +1,154 @@
+// Columns
+
+@mixin col {
+  border: solid 2px #000;
+  padding: 24px;
+  float: left;
+  box-sizing: border-box;
+}
+
+
+// Buttons 
+
+@mixin button-general {
+  
+  padding: 5px 10px;
+  
+  &:active {
+    transform: translateY(2px);
+  }
+  
+  &:disabled {
+    border: 1px solid $color-subtleoutline;
+    background-color: $color-gray;
+    color: $color-disabledtext;
+  }
+}
+
+
+@mixin button-primary {
+
+  border: 1px solid $color-green;
+  background-color: $color-primbutton;
+  color: $color-whitetext;
+  padding: 5px 10px;
+  
+  &:active {
+    transform: translateY(2px);
+  }
+  
+  &:hover {
+    background-color: $color-primbuttonhover;
+    padding: 5px 10px
+  };
+  
+  &:disabled {
+    border: 1px solid $color-subtleoutline;
+    background-color: $color-gray;
+    color: $color-disabledtext;
+  }
+}
+
+@mixin button-secondary {
+
+  border: 1px solid $color-secbuttonoutline;
+  background-color: $color-secbutton;
+  color: $color-whitetext;
+  padding: 5px 10px;
+  
+  &:active {
+    transform: translateY(2px);
+  }
+  
+  &:hover {
+    background-color: $color-secbuttonhover;
+    color: $color-whitetext;
+    padding: 5px 10px
+  };
+  
+  &:disabled {
+    border: 1px solid $color-subtleoutline;
+    background-color: $color-gray;
+    color: $color-disabledtext;
+  }
+}
+
+@mixin button-warning {
+	
+  border: 1px solid $color-warnbuttonoutline;
+  background-color: $color-red;
+  color: white;
+  padding: 5px 10px;
+  
+  &:active {
+    transform: translateY(2px);
+  }
+  
+  &:hover {
+    background-color: $color-lightred;
+    color: #ffffff;
+    padding: 5px 10px
+  };
+  
+  &:disabled {
+    border: 1px solid $color-subtleoutline;
+    background-color: $color-gray;
+    color: $color-disabledtext;
+  }
+}
+
+
+// Inputs
+
+@mixin input-general {
+  
+  padding: 5px 10px;
+  border: 1px solid $color-subtleoutline;
+  border-radius: 3px;
+  outline: none;
+  
+  &:focus {
+    border-color: $color-sky;
+  }
+
+  &:read-only {
+    background: $color-disabledbg;
+    border-color: $color-subtleoutline;
+  }
+
+  &:disabled {
+    border-color: $color-subtleoutline;
+    background: $color-disabledbg;
+    color: $color-disabledtext;
+  }
+}
+
+@mixin input-required {
+  
+  padding: 5px 10px;
+  border: 1px solid $color-subtleoutline;
+  border-radius: 3px;
+  outline: none;
+  
+  &:required:valid {
+    border-color: $color-green;
+    background: $color-lightgreen;
+  }
+  
+  &:required:invalid {
+    border-color: $color-red;
+    background: $color-pink;
+  }
+
+  &:required:focus:valid {
+    background: url("https://d33wubrfki0l68.cloudfront.net/6da9ad5ba456a485807728e5aeec4606699efcd6/c3bab/images/check.svg") no-repeat 95% 50%;
+    background-size: 25px;
+  }
+  
+   &:required:focus:invalid {
+    background: url("https://d33wubrfki0l68.cloudfront.net/2efa1fff9f09a98d2248613785130ee6fa5c3e58/c77fb/images/tnt.svg") no-repeat 95% 50%;
+    background-size: 45px;
+  }
+}
+
+

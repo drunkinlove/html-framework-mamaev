@@ -4,27 +4,26 @@
   overflow: auto;
   width: 80%;
   padding: 5px 10px;
-  border: 1px solid #bbb;
+  border: 1px solid $color-subtleoutline;
   border-radius: 3px;
   
   &:focus {
-    border-color: cornflowerblue;
+    border-color: $color-sky;
   }
   
   &:read-only {
     color: black;
-    background-color: #eee;
+    background-color: $color-disabledbg;
   }
   
+  // Border of read-only textarea should not change on focus
   &:read-only:focus {
-    border-color: #bbb;
+    border-color: $color-subtleoutline;
   }
 
   &:disabled {
-    border-color: #bbb;
-    background-color: #eee;
-    color: #666666;
-    color: #666666;
+    background-color: $color-disabledbg;
+    color: $color-disabledtext;
   }
 
   // I wasn't sure how to code the textarea in the 'error' condition, so I
@@ -32,6 +31,6 @@
   // This only changes the border color, actually.
   &-err {
     @extend .textarea;
-    border: 1px solid salmon;
+    border: 1px solid $color-red;
   }
 }

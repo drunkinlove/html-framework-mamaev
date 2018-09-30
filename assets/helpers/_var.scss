@@ -1,0 +1,34 @@
+// Colors
+
+$color-sky: #2196F3; // Active checkbox bg
+$color-lightsky: lighten(#2196F3, 10%); // Border of focused input & textarea; active checkbox bg on hover
+$color-gray: #ccc; // Inactive checkbox bg; disabled button bg
+$color-lightgray: #ddd; // Inactive checkbox bg on hover
+$color-red: lighten(red, 10%); // Input & textarea error outline; checkbox error bg; warning button bg
+$color-lightred: lighten(red, 20%); // Checkbox error bg on hover; warning button bg on hover
+$color-pink: pink; // Error input bg
+$color-green: green; // Correct input outline; primary button outline
+$color-lightgreen: lightgreen; // Correct input bg
+$color-whitetext: white;
+$color-checkmark: white;
+$color-outline: gray; // Checkboxes
+$color-subtleoutline: #bbb; // Default textareas & inputs; disabled buttons
+$color-disabledtext: #666;
+$color-disabledbg: #eee;
+$color-primbutton: #4cbb17;
+$color-primbuttonhover: lighten(#4cbb17, 10%);
+$color-secbuttonoutline: #0066cc;
+$color-secbutton: #0099cc;
+$color-secbuttonhover: lighten(#0099cc, 10%);
+$color-warnbuttonoutline: crimson;
+
+// Column sizes
+
+$col_widths: 2, 3, 4, 6, 8;
+$col_sizes: '-lg', '-md', '-sm', '';
+
+// Width breakpoints
+
+$break-lg: 1200px;
+$break-md: 992px;
+$break-sm: 768px;

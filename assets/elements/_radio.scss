@@ -1,30 +1,29 @@
-$radio_dims: (
-	lg: 32px,
-	md: 24px,
-	sm: 16px,
-);
-
 @each $size, $dim in $radio-dims {
 
 	// Setting up radiomark
 	.radiomark-#{$size} {
 		position: absolute;
 		top: 0;
-		left: $dim / 4;
+		left: $dim / 8;
 		height: $dim * 3 / 2;
 		width: $dim * 3 / 2;
-		background-color: #eee;
+		background-color: $color-gray;
+		border: 1px solid transparent;
 		border-radius: 50%;
-	}
-
-	// Adding hover effect
-	.label-#{$size} input ~ .radiomark-#{$size} {
-		background-color: #ccc;
 	}
 
 	// Adding checked effect
 	.label-#{$size} input:checked ~ .radiomark-#{$size} {
-		background-color: #2196F3;
+		background-color: $color-sky;
+	}
+
+	// Adding hover effect
+	.label-#{$size} input:hover ~ .radiomark-#{$size} {
+		background-color: $color-lightgray;
+	}
+
+	.label-#{$size} input:checked:hover ~ .radiomark-#{$size} {
+		background-color: $color-lightsky;
 	}
 
 	.radiomark-#{$size}::after {
@@ -45,22 +44,31 @@ $radio_dims: (
 		width: $dim / 2;
 		height: $dim / 2;
 		border-radius: 50%;
-		background: white;
+		background: $color-checkmark;
 	}
 
 	// Disabled behavior
 	.label-#{$size} input:disabled ~ .radiomark-#{$size}::after {
 		display: block;
 	}
+	// Should have no hover effect as you can't interact with it
+	.label-#{$size} input:disabled ~ .radiomark-#{$size} {
+		display: block;
+		background: $color-gray;
+	}
 
 	// Invalid behavior
 	.label-#{$size} input:invalid ~ .radiomark-#{$size} {
-		background-color: lighten(red, 10%);
+		background-color: $color-red;
+	}
+
+	.label-#{$size} input:invalid:hover ~ .radiomark-#{$size} {
+		background-color: $color-lightred;
 	}
 
 	// Focused behavior
   	.label-#{$size} input:focus ~ .radiomark-#{$size} {
-		background-color: lighten(#2196F3, 10%);
+		border: solid 1px $color-outline;
 	}
 
   
