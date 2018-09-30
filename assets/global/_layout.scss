@@ -15,7 +15,7 @@ $positions: 'absolute', 'fixed', 'relative', 'sticky';
 
 @each $position in $positions {
 	.pos-#{$position} {
-		position: #{$position};
+		position: $position;
 	}
 }
 
@@ -36,8 +36,6 @@ $positions: 'absolute', 'fixed', 'relative', 'sticky';
 
 
 // Margins & padding: reworked using @each.
-
-$mp_dims: 8px, 16px, 32px, 40px, 48px;
 
 @each $dim in $mp_dims {
 	.margin-#{$dim} {
