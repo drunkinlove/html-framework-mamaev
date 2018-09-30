@@ -1,7 +1,7 @@
 // Columns
 
 @mixin col {
-  border: solid 2px #000;
+  border: solid 1px $color-outline;
   padding: 24px;
   float: left;
   box-sizing: border-box;
@@ -77,7 +77,7 @@
 	
   border: 1px solid $color-warnbuttonoutline;
   background-color: $color-red;
-  color: white;
+  color: $color-whitetext;
   padding: 5px 10px;
   
   &:active {
@@ -86,7 +86,7 @@
   
   &:hover {
     background-color: $color-lightred;
-    color: #ffffff;
+    color: $color-whitetext;
     padding: 5px 10px
   };
   
